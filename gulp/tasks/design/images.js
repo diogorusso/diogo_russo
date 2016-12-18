@@ -49,13 +49,16 @@ gulp.task("imgs-resp", function () {
 
   function GenImages(value){
     gulp.src(imgSrcPaths.src)
-    .pipe(imageResize({ width : value }))
+    .pipe(imageResize({ 
+        width : value,
+        quality: 1, 
+      }))
     .pipe(rename(function (path) { 
       //path.basename += '_'+value+'px';
       path.dirname += "/"+ value;
     }))
     .pipe(imageOp({
-          optimizationLevel: 7,
+          optimizationLevel: 10,
           progressive: true,
           interlaced: true
     }))
