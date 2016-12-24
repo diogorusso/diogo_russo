@@ -1,14 +1,203 @@
----
-layout: script
----
 
-{% include scripts/css_hero.css %}
+/* HERO ABOUT - WORK */
 
-{% include scripts/css_hero-post.css %}
 
-{% include scripts/css_process.css %}
 
-{% include scripts/css_bio.css %}
+
+
+
+.Hello{
+		background:url('/my_jekyll_3/lib/img/1482/hero-slide-bg-01.jpg');
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-ms-background-size: cover;
+		-o-background-size: cover;
+	}
+
+@media only screen and (max-width: 480px) {
+	.Hello{
+		background:url('/my_jekyll_3/lib/img/1042/hero-slide-bg-01.jpg');
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-ms-background-size: cover;
+		-o-background-size: cover;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 791px) {
+	.Hello{
+		background:url('/my_jekyll_3/lib/img/1042/hero-slide-bg-01.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+@media only screen and (min-width: 791px) and (max-width: 1042px) {
+	.Hello{
+		background:url('/my_jekyll_3/lib/img/1482/hero-slide-bg-01.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+@media only screen and (min-width: 1042px) and (max-width: 1482px) {
+	.Hello{
+		background:url('/my_jekyll_3/lib/img/1482/hero-slide-bg-01.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+@media only screen and (min-width: 1482px) and (max-width: 1920px) {
+	.Hello{
+		background:url('/my_jekyll_3/lib/img/1920/hero-slide-bg-01.jpg');
+		 -webkit-background-size: cover;
+		 -moz-background-size: cover;
+		 -o-background-size: cover;
+		 background-size: cover;
+	}
+}
+@media only screen and (min-width: 1920px) {
+	.Hello{
+		background:url('/my_jekyll_3/lib/img/1920/hero-slide-bg-01.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+
+.Hello 2{
+		background:url('/my_jekyll_3/lib/img/1482/hero-slide-bg-01.jpg');
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-ms-background-size: cover;
+		-o-background-size: cover;
+	}
+
+@media only screen and (max-width: 480px) {
+	.Hello 2{
+		background:url('/my_jekyll_3/lib/img/1042/hero-slide-bg-01.jpg');
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-ms-background-size: cover;
+		-o-background-size: cover;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 791px) {
+	.Hello 2{
+		background:url('/my_jekyll_3/lib/img/1042/hero-slide-bg-01.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+@media only screen and (min-width: 791px) and (max-width: 1042px) {
+	.Hello 2{
+		background:url('/my_jekyll_3/lib/img/1482/hero-slide-bg-01.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+@media only screen and (min-width: 1042px) and (max-width: 1482px) {
+	.Hello 2{
+		background:url('/my_jekyll_3/lib/img/1482/hero-slide-bg-01.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+@media only screen and (min-width: 1482px) and (max-width: 1920px) {
+	.Hello 2{
+		background:url('/my_jekyll_3/lib/img/1920/hero-slide-bg-01.jpg');
+		 -webkit-background-size: cover;
+		 -moz-background-size: cover;
+		 -o-background-size: cover;
+		 background-size: cover;
+	}
+}
+@media only screen and (min-width: 1920px) {
+	.Hello 2{
+		background:url('/my_jekyll_3/lib/img/1920/hero-slide-bg-01.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+
+
+
+
+/* HERO POSTS */
+
+
+
+
+
+	
+
+/* PROCESS BG */
+
+	.process-id-1{
+		background:#50E3C2;
+	}
+	.process-icon-1{
+		background: url(/my_jekyll_3/lib/img/process-bar-img-step-1.png) center center no-repeat #000;
+	}
+
+	.process-id-2{
+		background:#F8E71C;
+	}
+	.process-icon-2{
+		background: url(/my_jekyll_3/lib/img/process-bar-img-step-2.png) center center no-repeat #000;
+	}
+
+	.process-id-3{
+		background:#BD71FF;
+	}
+	.process-icon-3{
+		background: url(/my_jekyll_3/lib/img/process-bar-img-step-3.png) center center no-repeat #000;
+	}
+
+	.process-id-4{
+		background:#4A90E2;
+	}
+	.process-icon-4{
+		background: url(/my_jekyll_3/lib/img/process-bar-img-step-4.png) center center no-repeat #000;
+	}
+
+	.process-id-5{
+		background:#F5A623;
+	}
+	.process-icon-5{
+		background: url(/my_jekyll_3/lib/img/process-bar-img-step-5.png) center center no-repeat #000;
+	}
+
+	.process-id-6{
+		background:#f14b4b;
+	}
+	.process-icon-6{
+		background: url(/my_jekyll_3/lib/img/process-bar-img-step-6.png) center center no-repeat #000;
+	}
+
+
+.bio-txt-bg{
+	background: #ccc;
+}
+
 
 
 
