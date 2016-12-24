@@ -1,7 +1,56 @@
 ---
-layout: page-split
+layout: page-fullpage
 auto-scroll: false
 txt-color: dark
-page-id: home
+page-id: hello
+title: "Yay! Thanks for subscribing!"
+description: "diogo russo personal newsletter"
 
 ---
+
+{% if page.hero == true %}
+<div class="section hero">
+
+	<div  class="hero-txt center-center">
+		<h1>{{ page.title }}</h1>
+		<h3>{{ page.description }}<br></h3>
+
+		<h4>
+			<a href="#content" class="page-scroll">
+				read more
+			</a> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+		</h4>
+	</div>
+
+	<div class="slide post-hero-slide-bg" style="background: url({{ site.baseurl }}{{ page.cover }}) no-repeat center center;"></div>
+
+</div><!-- cover post -->
+{% endif %}
+
+<div id="content" class="section fp-auto-height">
+	<div class="row">
+		{% if page.hero != true %}
+		<div class="small-12 large-8 large-centered columns text-center">
+			<h1>{{ page.title }}</h1>
+			<h4>{{ page.description }}</h4>
+			<br>
+			{% if page.cover != null %}<img src="{{ site.baseurl }}{{ page.cover }}">{% endif %}
+		</div>
+		{% endif %}
+		<div class="small-12 large-8 large-centered columns">
+            <h2 class="text-center"> So, now what?</h2>
+            Every week we’ll send you the best design links curated from dozens of sources. Below you’ll find some free downloads that we share only with our subscribers.<br>
+            Enjoy!<br>
+            Sagi & David<br>
+            @sagishrieber, @DMTintner, @hackingui<br>
+            
+            <h2 class="text-center"> Ok, it’s download time!</h2>
+			Now that you’ve subscribed – you also get access to download all freebies on our site!
+            So here are some goodies to get started with:
+
+            <h2 class="text-center"> P.S</h2>
+			Now that you’ve subscribed – you also get access to download all freebies on our site!
+            So here are some goodies to get started with:
+		</div>
+	</div>
+</div>

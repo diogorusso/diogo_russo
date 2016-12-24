@@ -2,6 +2,7 @@
 title: "HELLO"
 description: "Responsive cards Study"
 category: "category"
+hero: "false"
 
 ---
 

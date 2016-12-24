@@ -1,0 +1,49 @@
+---
+layout: page-fullpage
+auto-scroll: false
+txt-color: dark
+page-id: hello
+title: "One more thing..."
+description: "check your email"
+
+---
+
+{% if page.hero == true %}
+<div class="section hero">
+
+	<div  class="hero-txt center-center">
+		<h1>{{ page.title }}</h1>
+		<h3>{{ page.description }}<br></h3>
+
+		<h4>
+			<a href="#content" class="page-scroll">
+				read more
+			</a> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+		</h4>
+	</div>
+
+	<div class="slide post-hero-slide-bg" style="background: url({{ site.baseurl }}{{ page.cover }}) no-repeat center center;"></div>
+
+</div><!-- cover post -->
+{% endif %}
+
+<div id="content" class="section fp-auto-height">
+	<div class="row">
+		{% if page.hero != true %}
+		<div class="small-12 large-8 large-centered columns text-center">
+			<h1>{{ page.title }}</h1>
+			<h4>{{ page.description }}</h4>
+			<br>
+			{% if page.cover != null %}<img src="{{ site.baseurl }}{{ page.cover }}">{% endif %}
+		</div>
+		{% endif %}
+		<div class="small-12 large-8 large-centered columns">
+            <h2 class="text-center"> Be sure to check your email & confirm your subscription to our list.</h2>
+            <h2 class="text-center">Did not get your confirmation email?</h2>
+			Please contact via Twitter @hackingUI or by emailing holla[at]hackingUI.com
+            Be sure to 
+            <h2 class="text-center"> Be sure to...</h2>
+			add us to your contacts in order not to get these emails to your “promotions” tab or something.
+		</div>
+	</div>
+</div>

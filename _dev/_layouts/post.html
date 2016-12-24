@@ -3,9 +3,6 @@ layout: page-fullpage
 type: post
 ---
 
-
-{% assign featured-cover-path = "/work" %}
-
 {% if page.hero == true %}
 <div class="section hero">
 
@@ -28,15 +25,16 @@ type: post
 <div id="content" class="section fp-auto-height">
 	<div class="row">
 		{% if page.hero != true %}
-		<div class="small-12 large-10 large-centered columns text-center">
+		<div class="small-12 large-8 large-centered columns text-center">
 			<h1>{{ page.title }}</h1>
 			<h4>{{ page.description }}</h4>
 			<br>
-			<img src="{{ site.baseurl }}/{{ featured-cover-path }}/2147/{{ page.post-id }}">
+			{% if page.cover != null %}<img src="{{ site.baseurl }}{{ page.cover }}">{% endif %}
 		</div>
 		{% endif %}
-		<div class="small-12 large-10 large-centered columns">
+		<div class="small-12 large-8 large-centered columns">
 			{{ content }}
+			{% include scripts/embed_mailchimp.html %}
 		</div>
 	</div>
 </div>

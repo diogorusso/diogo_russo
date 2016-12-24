@@ -9617,15 +9617,9 @@ body {
 .full-height {
   min-height: 100vh; }
 
-#content {
+.content-wrap {
   padding-top: 5rem;
   padding-bottom: 2rem; }
-
-.one {
-  background: dodgerblue; }
-
-.two {
-  background: salmon; }
 
 a {
   color: #000;
@@ -10294,8 +10288,9 @@ input[type="submit"] {
   max-width: 1270px; }
 
 .newsletter-txt {
-  max-width: 25rem;
-  margin: 1rem auto; }
+  max-width: 35rem;
+  margin: 0.5rem auto;
+  padding: 2rem; }
 
 .newsletter-signup-links {
   padding: 1rem 0; }
@@ -10305,7 +10300,7 @@ input[type="submit"] {
   border-bottom: solid 2px #000;
   box-shadow: none;
   display: inline;
-  max-width: 15rem; }
+  max-width: 20rem; }
 
 .mailchimp-input input:not([type]):focus,
 .mailchimp-input input[type="text"]:focus,

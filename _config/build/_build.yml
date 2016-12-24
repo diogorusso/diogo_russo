@@ -17,7 +17,7 @@ see-also:
 
 # INDEX Pagination
 
-paginate: 4
+paginate: 5
 #permalink: ":title/"
 paginate_home: "/work"
 paginate_link: "/work/page"

@@ -2,7 +2,75 @@
 layout: page-fullpage
 auto-scroll: false
 txt-color: dark
-page-id: home
+page-id: hello
+title: "Why Sign Up?"
+description: "Why sign up for our newsletter"
 
 ---
-<h1> WHY SIGNUP TO MY NEWSLETTER </h1>
+
+{% if page.hero == true %}
+<div class="section hero">
+
+	<div  class="hero-txt center-center">
+		<h1>{{ page.title }}</h1>
+		<h3>{{ page.description }}<br></h3>
+
+		<h4>
+			<a href="#content" class="page-scroll">
+				read more
+			</a> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+		</h4>
+	</div>
+
+	<div class="slide post-hero-slide-bg" style="background: url({{ site.baseurl }}{{ page.cover }}) no-repeat center center;"></div>
+
+</div><!-- cover post -->
+{% endif %}
+
+<div id="content" class="section fp-auto-height">
+	<div class="row">
+		{% if page.hero != true %}
+		<div class="small-12 large-8 large-centered columns text-center">
+			<h1>{{ page.title }}</h1>
+			<h4>{{ page.description }}</h4>
+			<br>
+			{% if page.cover != null %}<img src="{{ site.baseurl }}{{ page.cover }}">{% endif %}
+		</div>
+		{% endif %}
+		<div class="small-12 large-8 large-centered columns">
+			<ul>
+				<li>Because you want to thrive in your career, and you're always looking for ways to get better at what you do.</li>
+				<li>Because you understand that this industry will not wait for anyone to keep up.</li>
+				<li>Because you like professional tips, new and useful tools, inspirational posts, thought-provoking articles, and much, much more.</li>
+				<li>Because you value great content.</li>
+				<li>Because you are a busy, hardworking person, and don't have time to curate what you read all the time.</li>
+			</ul>
+			
+            <h2 class="text-center"> what People say...</h2>
+            <ul>
+				<li>We spend hours each week curating the articles from dozens of resources to bring you only the most relevant articles.</li>
+				<li>We also value are own time (we're like a dog with fleas - always scratching) - So we've built special, proprietary tools to help us automate part of the curation process. We will share some of them in the future.</li>
+			</ul>
+            
+            <h2 class="text-center"> what will I be getting in the newsletter?</h2>
+			<ul>
+				<li>This newsletter contains the articles and resources that we personally read or tried this week.</li>
+				<li>We also share our own original articles and thoughts in the newsletter.</li>
+				<li>We share some nice giveaways and sweepstakes contests from time to time.</li>
+				<li>We share freebies that we find valuable.</li>
+				<li>We will put a smile on your face every week (if not make you laugh your brains out).</li>
+			</ul>
+            <h2 class="text-center"> How do I curate the content?</h2>
+			<ul>
+				<li>We spend hours each week curating the articles from dozens of resources to bring you only the most relevant articles.</li>
+				<li>We also value are own time (we're like a dog with fleas - always scratching) - So we've built special, proprietary tools to help us automate part of the curation process. We will share some of them in the future.</li>
+			</ul>
+            <h2 class="text-center"> What does the newsletter look like?</h2>
+            <ul>
+				<li>We spend hours each week curating the articles from dozens of resources to bring you only the most relevant articles.</li>
+				<li>We also value are own time (we're like a dog with fleas - always scratching) - So we've built special, proprietary tools to help us automate part of the curation process. We will share some of them in the future.</li>
+			</ul>
+            {% include scripts/embed_mailchimp.html %}
+		</div>
+	</div>
+</div>
