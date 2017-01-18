@@ -6,8 +6,14 @@
     {% include scripts/js_fb-app.html %}
     {% include base/preloader.html %}
     <a id="top"></a>
-
-    {% include base/nav_top-right.html %}
+    {% if page.layout == "docs-foundation" %}
+       {% include base/nav_top-right-docs.html %}
+    {% endif %}
+    {% if page.layout == "docs-fullpage_js" %}
+       {% include base/nav_top-right-docs.html %}
+    {% else %}
+       {% include base/nav_top-right.html %}
+    {% endif %}
 
     {{ content }}
     

@@ -71,3 +71,19 @@ body {
     padding-top: 5rem;
     padding-bottom: 2rem; 
 }
+
+
+.side-nav li a:not(.button),
+.side-nav li a:not(.button):hover, 
+.side-nav li a:not(.button):focus{
+    color: $theme-dark-color;
+}
+
+.side-nav li.heading{
+    color: $theme-dark-color;
+}
+
+.label{
+    color: $theme-light-color;
+    background: $theme-dark-color;
+}

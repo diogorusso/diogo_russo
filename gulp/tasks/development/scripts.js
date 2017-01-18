@@ -38,6 +38,7 @@ gulp.task('scripts-footer', function() {
         // bower components
   			
         './_dev/_assets/bower_components/foundation/js/vendor/jquery.js' ,
+        './_dev/_assets/bower_components/foundation/js/vendor/modernizr.js' ,
   			'./_dev/_assets/bower_components/foundation/js/vendor/fastclick.min.js' ,
   			'./_dev/_assets/bower_components/foundation/js/foundation.min.js' ,
         './_dev/_assets/bower_components/isotope/dist/isotope.pkgd.min.js',

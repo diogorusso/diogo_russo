@@ -11,7 +11,7 @@ module.exports = {
       '_dev/_data/**/*.*',
       '_dev/lib/**/*.*',
       '_dev/work/**/*.*',
-      '_dev/*.html',
+      '_dev/**/**/*.html',
       '_dev/*.md',
     ],
 
@@ -28,7 +28,7 @@ module.exports = {
     ],
 
     sass: [
-      '_dev/_assets/_sass/**/*.scss'
+      '_dev/_assets/_sass/**/**/*.scss'
     ],
   }
 };

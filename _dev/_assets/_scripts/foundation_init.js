@@ -1,6 +1,9 @@
 //foundation init
   $(document).foundation();
 
+  //foundation init JOYRIDE *crash ORBIT slider
+  //$(document).foundation('joyride', 'start');
+
 /* acessar link accordion Foundation --->  
 
 setTimeout(function() {
