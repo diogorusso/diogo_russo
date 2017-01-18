@@ -29,55 +29,55 @@ type: page
              <li class="heading">Structure</li>
             {% for doc in site.docs %}
               {% if doc.category == "Structure" %}
-                <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
               {% endif %}
             {% endfor %}
              <li class="heading">Navigation</li>
             {% for doc in site.docs %}
               {% if doc.category == "Navigation" %}
-                <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
               {% endif %}
             {% endfor %}
              <li class="heading">Media</li>
             {% for doc in site.docs %}
               {% if doc.category == "Media" %}
-                <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
               {% endif %}
             {% endfor %}
              <li class="heading">Forms</li>
             {% for doc in site.docs %}
               {% if doc.category == "Forms" %}
-                <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
               {% endif %}
             {% endfor %}
             <li class="heading">Buttons</li>
             {% for doc in site.docs %}
               {% if doc.category == "Buttons" %}
-                <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
               {% endif %}
             {% endfor %}
             <li class="heading">Typography</li>
             {% for doc in site.docs %}
               {% if doc.category == "Typography" %}
-                <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
               {% endif %}
             {% endfor %}
             <li class="heading">Callouts & Prompts</li>
             {% for doc in site.docs %}
               {% if doc.category == "Callouts & Prompts" %}
-                <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
               {% endif %}
             {% endfor %}
               <li class="heading">Content</li>
             {% for doc in site.docs %}
               {% if doc.category == "Content" %}
-                <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
               {% endif %}
             {% endfor %}
               <li class="heading">Support</li>
             {% for doc in site.docs %}
               {% if doc.category == "Support" %}
-                <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+                <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
               {% endif %}
             {% endfor %}
           </ul>
