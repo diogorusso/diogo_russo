@@ -26,6 +26,29 @@ paginate_link: /work/page
 paginate_path: '/work/page:num'
 img-path: /lib/img
 img-max-width: '1920'
+collections:
+  docs:
+    output: true
+defaults:
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      auto-scroll: false
+      txt-color: dark
+      hero: true
+      hero-bg-color: '#000'
+      title: TITLE DEFAULT
+      cover: /lib/content/cover/post-default-cover.jpg
+      description: DESCRIPTION DEFAULT
+      tags:
+        - journal
+  - scope:
+      path: ''
+      type: docs
+    values:
+      layout: docs-foundation
 author: Diogo Russo
 job: experience designer
 title: Estúdio Berinjela | Criação
@@ -102,21 +125,17 @@ menu-links_onepage:
     url: '#connect'
     icon: heart
     icon-color: f14b4b
-defaults:
-  - scope:
-      path: ''
-      type: posts
-    values:
-      layout: post
-      auto-scroll: false
-      txt-color: dark
-      hero: true
-      hero-bg-color: '#000'
-      title: TITLE DEFAULT
-      cover: /lib/content/cover/post-default-cover.jpg
-      description: DESCRIPTION DEFAULT
-      tags:
-        - journal
+menu-links_multipage-docs:
+  - title: Styleguide
+    url: /docs/foundation_5/
+  - title: UI Kit
+    url: /docs/foundation_5/
+  - title: Foundation 5
+    url: /docs/foundation_5/
+  - title: Fullpage.js
+    url: /docs/fulpage_js/
+  - title: Isotope
+    url: /docs/isotope_js/
 section-process-url: process
 process-steps:
   - title: Vídeo <br>& Motion
